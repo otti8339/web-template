@@ -28,3 +28,13 @@ $inner-padding: 20px;
 
 // トランジション
 $transition-base: 0.3s ease;
+
+// ============================================
+// rem変換関数
+// 使い方: font-size: rem(16); padding: rem(24);
+// ============================================
+$base-font-size: 16;
+
+@function rem($px) {
+  @return calc($px / $base-font-size) * 1rem;
+}
