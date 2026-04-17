@@ -1,18 +1,18 @@
 // ============================================
 // ミックスイン
 // ============================================
-@use 'variables' as v;
+@use 'variables' as *;
 
 // レスポンシブ（SP）
 @mixin sp {
-  @media screen and (max-width: #{v.$breakpoint-sp}) {
+  @media screen and (max-width: #{$breakpoint-sp}) {
     @content;
   }
 }
 
 // レスポンシブ（タブレット）
 @mixin tb {
-  @media screen and (max-width: #{v.$breakpoint-tb}) {
+  @media screen and (max-width: #{$breakpoint-tb}) {
     @content;
   }
 }
@@ -33,7 +33,7 @@
 
 // ホバーエフェクト
 @mixin hover {
-  transition: opacity v.$transition-base;
+  transition: opacity $transition-base;
   &:hover {
     opacity: 0.7;
   }

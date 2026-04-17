@@ -1,23 +1,23 @@
 // ============================================
 // ボタン
 // ============================================
-@use '../base/variables' as v;
-@use '../base/mixin' as m;
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
 
 .btn {
   display: inline-block;
   padding: 14px 40px;
   border-radius: 4px;
-  font-size: v.$font-size-base;
+  font-size: $font-size-base;
   font-weight: 700;
   text-align: center;
-  transition: all v.$transition-base;
+  transition: all $transition-base;
   cursor: pointer;
 
   // メインカラー
   &--primary {
-    background-color: v.$color-accent;
-    color: v.$color-white;
+    background-color: $color-accent;
+    color: $color-white;
 
     &:hover {
       opacity: 0.8;
@@ -27,12 +27,12 @@
   // アウトライン
   &--outline {
     background-color: transparent;
-    border: 2px solid v.$color-accent;
-    color: v.$color-accent;
+    border: 2px solid $color-accent;
+    color: $color-accent;
 
     &:hover {
-      background-color: v.$color-accent;
-      color: v.$color-white;
+      background-color: $color-accent;
+      color: $color-white;
     }
   }
 }
