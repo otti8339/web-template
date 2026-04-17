@@ -1,0 +1,24 @@
+// ============================================
+// style.scss - エントリーポイント
+// ============================================
+
+// Base
+@use 'base/reset';
+@use 'base/variables';
+@use 'base/mixin';
+@use 'base/base';
+
+// Global
+@use 'global/header';
+@use 'global/footer';
+
+// Module（パーツ）
+@use 'module/button';
+@use 'module/inner';
+
+// Page（ページ固有）
+// @use 'page/top';
+// @use 'page/about';
+
+// Plugin（外部ライブラリ上書き等）
+// @use 'plugin/swiper';

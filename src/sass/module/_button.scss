@@ -1,0 +1,38 @@
+// ============================================
+// ボタン
+// ============================================
+@use '../base/variables' as v;
+@use '../base/mixin' as m;
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 4px;
+  font-size: v.$font-size-base;
+  font-weight: 700;
+  text-align: center;
+  transition: all v.$transition-base;
+  cursor: pointer;
+
+  // メインカラー
+  &--primary {
+    background-color: v.$color-accent;
+    color: v.$color-white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // アウトライン
+  &--outline {
+    background-color: transparent;
+    border: 2px solid v.$color-accent;
+    color: v.$color-accent;
+
+    &:hover {
+      background-color: v.$color-accent;
+      color: v.$color-white;
+    }
+  }
+}

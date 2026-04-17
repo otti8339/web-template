@@ -1,0 +1,44 @@
+// ============================================
+// ヘッダー
+// ============================================
+@use '../base/variables' as v;
+@use '../base/mixin' as m;
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: v.$color-white;
+  border-bottom: 1px solid v.$color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+    @include m.hover;
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      gap: 32px;
+    }
+
+    a {
+      font-size: v.$font-size-sm;
+      @include m.hover;
+    }
+
+    @include m.sp {
+      display: none;
+    }
+  }
+}

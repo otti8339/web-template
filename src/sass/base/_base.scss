@@ -1,0 +1,17 @@
+// ============================================
+// ベーススタイル
+// ============================================
+@use 'variables' as v;
+
+html {
+  font-size: v.$font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: v.$font-family-base;
+  font-size: v.$font-size-base;
+  line-height: v.$line-height-base;
+  color: v.$color-text;
+  background-color: v.$color-white;
+}

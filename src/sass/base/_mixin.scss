@@ -1,0 +1,40 @@
+// ============================================
+// ミックスイン
+// ============================================
+@use 'variables' as v;
+
+// レスポンシブ（SP）
+@mixin sp {
+  @media screen and (max-width: #{v.$breakpoint-sp}) {
+    @content;
+  }
+}
+
+// レスポンシブ（タブレット）
+@mixin tb {
+  @media screen and (max-width: #{v.$breakpoint-tb}) {
+    @content;
+  }
+}
+
+// フレックスボックス中央揃え
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// テキスト省略（1行）
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// ホバーエフェクト
+@mixin hover {
+  transition: opacity v.$transition-base;
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,16 @@
+// ============================================
+// フッター
+// ============================================
+@use '../base/variables' as v;
+
+.footer {
+  background-color: v.$color-main;
+  color: v.$color-white;
+  padding: 32px 0;
+
+  &__copy {
+    text-align: center;
+    font-size: v.$font-size-sm;
+    color: rgba(v.$color-white, 0.6);
+  }
+}
