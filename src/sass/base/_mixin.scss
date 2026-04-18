@@ -3,16 +3,16 @@
 // ============================================
 @use 'variables' as *;
 
-// レスポンシブ（SP）
+// レスポンシブ (SP)
 @mixin sp {
-  @media screen and (max-width: #{$breakpoint-sp}) {
+  @media screen and (min-width: #{$breakpoint-sp}) {
     @content;
   }
 }
 
-// レスポンシブ（タブレット）
+// レスポンシブ (タブレット)
 @mixin tb {
-  @media screen and (max-width: #{$breakpoint-tb}) {
+  @media screen and (min-width: #{$breakpoint-tb}) {
     @content;
   }
 }
