@@ -3,16 +3,17 @@
 // ============================================
 @use 'variables' as *;
 
-// レスポンシブ (SP)
+// レスポンシブ (SP: 767px以下)
+// PCのスタイルを基本にし、SPで上書きする書き方
 @mixin sp {
-  @media screen and (min-width: #{$breakpoint-sp}) {
+  @media screen and (max-width: #{$breakpoint-sp - 1px}) {
     @content;
   }
 }
 
-// レスポンシブ (タブレット)
+// レスポンシブ (タブレット以下: 1024px以下)
 @mixin tb {
-  @media screen and (min-width: #{$breakpoint-tb}) {
+  @media screen and (max-width: #{$breakpoint-tb - 1px}) {
     @content;
   }
 }
