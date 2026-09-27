@@ -26,7 +26,14 @@
     @include hover;
   }
 
+  // ナビ（SPでは非表示、PCで表示）
   &__nav {
+    display: none;
+
+    @include pc {
+      display: block;
+    }
+
     ul {
       display: flex;
       gap: 32px;
@@ -35,10 +42,6 @@
     a {
       font-size: $font-size-sm;
       @include hover;
-    }
-
-    @include sp {
-      display: none;
     }
   }
 }

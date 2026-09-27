@@ -19,8 +19,9 @@ $font-size-lg: 18px;
 $line-height-base: 1.8;
 
 // ブレークポイント
-$breakpoint-sp: 768px;
-$breakpoint-tb: 1025px;
+// モバイルファースト: SPのスタイルを基本に、幅が広くなったら上書きする
+$breakpoint-tb: 768px;   // タブレット以上
+$breakpoint-pc: 1025px;  // PC以上
 
 // レイアウト
 $inner-width: 1200px;
