@@ -18,5 +18,10 @@
     "gulp-sourcemaps": "^3.0.0",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1"
+  },
+  "overrides": {
+    "gulp-clean-css": {
+      "clean-css": "^5.3.3"
+    }
   }
 }
